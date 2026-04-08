@@ -1,0 +1,11 @@
+name: 'Testing: E2E'
+
+on:
+  workflow_dispatch:
+
+jobs:
+  legacy-placeholder:
+    if: github.repository == 'google-gemini/gemini-cli'
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Legacy workflow name retained for manual refreshes."
